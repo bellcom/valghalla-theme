@@ -38,9 +38,9 @@
   <div id="bunddiv">
 <div class="container">
   <?php print render($page['menu_bar']); ?>
-    <?php if ($breadcrumb): ?>
+    <?php /* if ($breadcrumb): ?>
     <section id="breadcrumb"><?php print $breadcrumb; ?></section>
-  <?php endif; ?>
+  <?php endif; */ ?>
 
   <?php print $messages; ?>
   <?php print render($page['help']); ?>
