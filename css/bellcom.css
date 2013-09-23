@@ -227,7 +227,7 @@ h2.block-title { display:none}
 
 
 #volunteer-station-list {}
-#volunteer-station-list dl {}
+#volunteer-station-list dl {margin:0 !important}
 #volunteer-station-list dt {
   float: left;
   width: 40px;
@@ -240,10 +240,10 @@ h2.block-title { display:none}
 #volunteer-station-list dd div {
   width: 320px;
   color: silver;
-  border: 1px solid #000;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  border: 1px solid silver;
+ /* -moz-border-radius: 10px;*/
+ /* -webkit-border-radius: 10px;*/
+  /*border-radius: 10px;*/
 }
 #volunteer-station-list dd div p {
   margin: 0;
@@ -280,20 +280,20 @@ h2.block-title { display:none}
   text-indent: -10000px;
 }
 #volunteer-station-list dd a:hover {
-  color: #DAAB53;
+  color: #DAAB53; 
 }
 #volunteer-station-list dd a.remove {
   text-align: center;
 }
 
 #volunteer-station-list dd a.add {
-  background: #fff url(../img/add.png) top left no-repeat;
+  background: #fff url(../img/plus.png) top left no-repeat;
 }
 #volunteer-station-list dd a.edit {
-  background: #fff url(../img/user_male.png) top left no-repeat;
+  background: #fff url(../img/man.png) top left no-repeat;
 }
 #volunteer-station-list dd a.remove {
-  background: #fff url(../img/divide.png) top left no-repeat;
+  background: #fff url(../img/delete.png) top left no-repeat;
 }
 
 .liste-med-frivillige h4 ul,
@@ -337,3 +337,12 @@ h2.block-title { display:none}
 h2.field-label {font-size: 16px}
 
 .field-name-body {color: #333}
+.view-valgsteder .item-list{padding-top: 15px;}
+
+.icon-digital-valglist{
+    width:20px;
+    height:20px;
+    margin-left: 10px;
+    background: #fff url(../img/digital_lists_small.png) top left no-repeat;
+    display:inline-block;
+}
