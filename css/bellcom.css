@@ -13,7 +13,7 @@
 
 /* reset.css */
 html {margin:0;padding:0;border:0;}
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit; font-family:inherit;vertical-align:baseline;}
 article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
 body {line-height:1.5;background:white;}
 table {border-collapse:separate;border-spacing:0;}
@@ -60,7 +60,7 @@ dl dt {font-weight:bold;}
 dd {margin-left:1.5em;}
 table {margin-bottom:1.4em;width:100%;}
 th {font-weight:bold;}
-thead th {background:#ccc;}
+thead th {background:#ccc; color: #000 }
 th, td, caption {padding:4px 10px 4px 5px;}
 tbody tr:nth-child(even) td, tbody tr.even td {background:#DEDEDE;}
 tfoot {font-style:italic;}
@@ -194,7 +194,8 @@ form.inline p { margin-bottom:0; }
 .info a			{ color: #205791; }
 
 
-body { background-color: #fff; font-size:100%}
+body {background-color: #fff;
+font-size: 13px}
 a { color:#555555; text-decoration:underline}
 h1 {  color: #6F717E}
 h2 { }
@@ -216,10 +217,10 @@ h2 { }
 #sitenamediv { color:#003663; text-transform: uppercase; }
 #sitenamediv a { color:#ddd; font-weight:lighter; }
 #bunddiv .container { padding-top:10px; margin-top:15px;}
-.content-inner, .block-inner { background-color:#FFF; padding-left:6px; padding-right: 6px; padding-top: 10px; padding-bottom:10px; margin:0 }
+.content-inner, .block-inner { background-color:#FFF; padding-left:0px; padding-right: 0px; padding-top: 10px; padding-bottom:10px; margin:0 }
 .block { margin-bottom:0; background-color:#FFF; margin-right:10px; }
 h2.block-title { display:none}
-.region-sidebar-first ul { border-top: 0px solid #ccc; list-style: none outside none; font-size: 9px; margin:0; border-right: 1px solid #ddd; padding: 0 }
+.region-sidebar-first ul {border-top: 0px solid #ccc; list-style: none outside none; font-size: 12px; margin: 0; border-right: 1px solid #ddd; padding: 0;}
 .region-sidebar-first ul li { border-bottom: 0px solid #ccc; display:block}
 .region-sidebar-first ul li.first { border-top: medium none}
 .region-sidebar-first ul li a { padding: 7px 0 8px 5px; display:block; text-decoration:none; color:#333333; }
@@ -322,8 +323,12 @@ h2.block-title { display:none}
   vertical-align: middle;
 }
 
+.pane-valhalla-blocks-party-constituency-status table {
+width: 395px
+}
+
 .pane-valhalla-blocks-party-constituency-status td.total {
-  border-top: 1px solid #000;
+  border-top: 1px solid #494949;
   font-weight: 900;
 }
 
@@ -346,3 +351,24 @@ h2.field-label {font-size: 16px}
     background: #fff url(../img/digital_lists_small.png) top left no-repeat;
     display:inline-block;
 }
+
+.front .partistatuslinie { width: 210px; padding-bottom: 50px}
+.front .partistatusenhed {float:left; width: 130px}
+.front .partistatusenhedvaerdi { border: 1px solid #333; padding: 6px; width: 65px; text-align: center; float: left}
+.front .partistatuslinie span {display: table-cell}
+.front .valgsted{ width: 230px; }
+.front .vafva { width: 60px; padding: 6px; margin-left: 20px; margin-right: 20px}
+.front .friv { width: 60px; padding: 6px}
+.front .valgkreds li { margin-bottom: 20px; height: 33px; width: 300px; word-wrap:break-word}
+.front table { font-size: 10px}
+
+div.panels-flexible-region.panels-flexible-region-5-center.panels-flexible-region-first  { width: 230px;}
+div.panels-flexible-region.panels-flexible-region-5-h__jre_omr__de.panels-flexible-region-last.hoejre {width: auto}
+
+.page-valgstyrere caption { background: #FFF;font-size: 15px;margin-bottom: 10px;margin-top: 20px;}
+.page-valgstyrere td { max-width: 100px}
+.page-valgstyrere td.views-field-field-email {width: 300px; max-width: 300px}
+.page-valgstyrere td.views-field-title {width: 200px; max-width: 200px}
+.page-valgstyrere td.views-field-field-rolle-id {width: 20px; max-width: 20px;}
+
+.volunteer-status-cancelled { color: #d70000; }
