@@ -109,3 +109,20 @@ span.button {} /* Inner wrapper */
   text-decoration: none;
   color: #ccc;
 }
+
+.rsvp-message {
+  color: #333;
+  background: white;
+  border: 1px solid silver;
+  position: absolute;
+  padding: 5px;
+  font-weight: normal;
+  max-width: 400px;
+}
+
+.rsvp-message-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background: url(../img/message.png);
+}
