@@ -126,3 +126,12 @@ span.button {} /* Inner wrapper */
   display: inline-block;
   background: url(../img/message.png);
 }
+
+#volunteer-station-list dd a.edit.reply {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  padding: 0;
+  float: none;
+  background: url(../img/reply.png);
+}
