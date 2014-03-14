@@ -1,36 +1,43 @@
 <?php
-// $Id: page.tpl.php,v 1.2.4.20 2010/12/01 21:47:53 jmburnz Exp $
+// $Id: page.tpl.php,v 1.2.4.20 2010/12/01 21:47:53 jmburnz Exp $ f f
 ?>
-<div id="page" class="container">
-
+<div id="page">
   <?php print render($page['leaderboard']); ?>
 
   <header class="clearfix">
-
+<div id="headerdiv">
+<div class="container">
     <?php if ($linked_site_logo): ?>
       <div id="logo"><?php print $linked_site_logo; ?></div>
     <?php endif; ?>
+  <?php if ($primary_navigation): print '<div id="primenu">'.$primary_navigation. '</div>'; endif; ?>
+  <?php if ($secondary_navigation): print '<div id="secmenu">'.$secondary_navigation. '</div>'; endif; ?>
 
+  <?php if(!empty($hello_user_text)): ?>
+      <div id="hello-user-text"><?php print $hello_user_text ?></div>
+  <?php endif; ?>
+</div>
+</div>
     <?php if ($site_name || $site_slogan): ?>
+      <div id="sitenamediv">
+      <div class="container">
       <hgroup<?php if (!$site_slogan && $hide_site_name): ?> class="<?php print $visibility; ?>"<?php endif; ?>>
         <?php if ($site_name): ?>
-         <div id="sitenamediv">< <h1 id="site-name"<?php if ($hide_site_name): ?> class="<?php print $visibility; ?>"<?php endif; ?>><?php print $site_name; ?></h1></div>
+         <div id="site-name"<?php if ($hide_site_name): ?> class="<?php print $visibility; ?>"<?php endif; ?>><?php print $site_name; ?></div>
         <?php endif; ?>
         <?php if ($site_slogan): ?>
-          <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
+          <div id="site-slogan"><?php print $site_slogan; ?></div>
         <?php endif; ?>
-      </hgroup>
+      </hgroup></div></div>
     <?php endif; ?>
-
+<div class="container">
     <?php print render($page['header']); ?>
-
+    </div>
   </header>
-
+  <div id="bunddiv">
+<div class="container">
   <?php print render($page['menu_bar']); ?>
-  <?php if ($primary_navigation): print $primary_navigation; endif; ?>
-  <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
-
-  <?php if ($breadcrumb): ?>
+    <?php if ($breadcrumb): ?>
     <section id="breadcrumb"><?php print $breadcrumb; ?></section>
   <?php endif; ?>
 
@@ -93,3 +100,4 @@
   <?php endif; ?>
 
 </div>
+</div></div>
