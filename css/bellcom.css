@@ -312,17 +312,23 @@ h2.block-title { display:none}
     font-size: 12px;
 }
 
+.loading-gif,
 #loading-gif {
   height: 99%;
   width: 99%;
   background: transparent url(../img/ajax-loader.gif) center center no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
   text-align: center;
   vertical-align: middle;
 }
-
+#loading-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.loading-gif {
+  width: 60px;
+  height: 60px;
+}
 .pane-valhalla-blocks-party-constituency-status table {
 width: 395px
 }
