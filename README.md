@@ -10,14 +10,15 @@ most commonly profiles/valghalla/themes/, but alternativly in sites/all/themes
 
 Licence and copyright
 ---------------------
-OS2Web is Copyright (c) 2012 Syddjurs Kommune, Denmark
+Valghalla is Copyright (c) 2012 OS2 - Offentligt Digitaliseringsfællesskab, Denmark
+<http://os2web.dk/>
 
-OS2Web is free software: you can redistribute it and/or modify
+Valghalla is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-OS2Web is distributed in the hope that it will be useful,
+Valghalla is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 ERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
