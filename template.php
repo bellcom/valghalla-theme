@@ -1,6 +1,12 @@
 <?php
-// $Id: template.php,v 1.2.4.8 2010/12/18 06:35:00 jmburnz Exp $
-
+/**
+ * @file
+ *  template.php
+ *
+ * @author
+ * @copyright 2014 Syddjurs Kommune. See README.md at
+ * https://github.com/os2web/valghalla-deploy
+ */
 
 /**
  * Override or insert variables into the page templates.
@@ -20,6 +26,7 @@ function valhalla_preprocess_page(&$vars) {
     $vars['hello_user_text'] = t('Du er logget på som: !username', array('!username' => theme('username', array('account' => $user)))) . $list;
   }
 
+  // Hide unnessecary page elements when volunteer is rsvp'ing
   if(arg(0) == 'volunteers'){
     if( arg(1) == 'login' || arg(1) == 'rsvp'){
       unset($vars['page']['sidebar_first']);
