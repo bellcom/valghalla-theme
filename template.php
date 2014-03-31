@@ -11,7 +11,7 @@
 /**
  * Override or insert variables into the page templates.
  */
-function valhalla_preprocess_page(&$vars) {
+function valghalla_theme_preprocess_page(&$vars) {
   global $user;
 
   $vars['hello_user_text'] = FALSE;
